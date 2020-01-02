@@ -8,7 +8,6 @@ as 를 통해 모듈명 변경이 가능함.
 import datetime
 import math
 import math as m
-from math import pi
 from math import *
 
 # import datetime
@@ -27,9 +26,15 @@ print("The value of pi is", pi)
 # from math import *
 print("The value of e is", e)
 
+from Module.mod1 import sum
+#from Module import mod1
+print(sum(1, 3))
 
-
-
+'''개인이 만든 module도 경로만 잘 맞추어서 사용하면 ok!
+ -> 폴더를 만들면 from 폴더명 import 모듈명으로 사용하면 된다. 
+ -> 위의 예시처럼 . 으로 모듈명을 선언하고 특정모듈함수를 import 해서 사용가능하다. 
+ -> 또는 from mod1 import * 로 모두 import가 가능하다. 
+'''
 
 
 """
